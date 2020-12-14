@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.app-container {
+    display: block;
+    width: 50rem !important;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    background-color: aliceblue;
+}
+
+.producers-container {
+    display: inline-block;
+}
+
+.subjects-container {
+    display: table-row;
+    .subject-child-container,
+    .subject-parent-container {
+        display: table-cell;
+        vertical-align: top;
+    }
+    .subject-parent-container {
+        padding-top: 4rem;
+    }
+}
+
+.parent-component {
+    display: block;
+    margin: 0 auto;
+    width: 20rem;
+    padding: 5px 0;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.producer-container {
+    display: inline-block;
+    width: 20rem;
+    margin-right: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: .7rem;
+    background-color: cornsilk;
+    margin-bottom: 5px !important;
+}
+
+h3 {
+    height: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.notification,
+.child-output {
+    margin-bottom: .5rem;
+    font-style: italic;
+    color: navy;
+}
+
+.child-output {
+    margin-top: 5px;
+    color: green;
+    font-weight: bold;
+}
+
+.child-component,
+.child-component-button {
+    display: inline !important;
+     :first-child {
+        margin-right: 1rem;
+    }
+}
+
+.subject-parent-container,
+.subject-parent-inner {
+    margin: 0 auto;
+    margin-top: 6px;
+    width: 16.5rem;
+    padding: 5px 0;
+    border: 1px solid gray;
+    border-radius: 6px;
+    background-color: cornsilk;
+}
+
+.subject-parent-inner {
+    height: 10rem;
+}
+
+.subject-child-container {
+    margin: 0 auto;
+    display: inline-block;
+    margin-top: 6px;
+    width: 16.5rem;
+    padding: 5px 0;
+    border: 1px solid gray;
+    border-radius: 6px;
+    background-color: cornsilk;
+}
+
+.send-button {
+    width: 14rem;
+    border-radius: 3px;
+    &:first-child {
+        margin-bottom: 2px;
+    }
+}
